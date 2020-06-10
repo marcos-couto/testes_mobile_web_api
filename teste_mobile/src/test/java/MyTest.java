@@ -1,3 +1,25 @@
+/*
+############################################################################################################
+PROJETO: Exercícios Práticos - ITEM 3
+CUROS: Início Rápido em Teste de Software
+APLICATIVO ALVO: icarros - Versão 4.19.3
+
+                               -ESPECIFICAÇÕES DO AMBIENTE DE TESTE-
+------------------------------------------------------------------------------------------------------------
+1 - Sistema Operacional: Linux Fedora 31
+2-  IDE: IntelliJ IDEA 2020.1.2 Build #IC-201.7846.76, built on June 1, 2020
+3-  Test Automation Framework: Appium 1.17.1-1 (Node.js 12.8.1 Electron 7.2.4)
+4 - Browser : Google Chrome Versão 83.0.4103.61 (Versão oficial) 64 bits
+5 - Android Studio:Android Studio 4.0 Build #AI-193.6911.18.40.6514223, built on May 20, 2020
+6 - Android Version: 8.1 Oreo API Level 27 System Image x86_64 / 9.0 Pie API Level 28 System Image x86_64
+------------------------------------------------------------------------------------------------------------
+Autor: Marcos A. M. Couto
+e-mail: mc3labs@outlook.com
+Data: 10/06/2020
+Versão do Teste : v1.0
+
+############################################################################################################
+ */
 
 // Bibliotecas
 import io.appium.java_client.TouchAction;
@@ -323,7 +345,7 @@ public class MyTest {
                     driver.findElement(By.id("br.com.icarros.androidapp:id/fromEditText")).clear();
                     driver.findElement(By.id("br.com.icarros.androidapp:id/fromEditText")).sendKeys("54000");
                     driver.findElement(By.id("br.com.icarros.androidapp:id/toEditText")).clear();
-                    driver.findElement(By.id("br.com.icarros.androidapp:id/toEditText")).sendKeys("54000");
+                    driver.findElement(By.id("br.com.icarros.androidapp:id/toEditText")).sendKeys("55000");
                     driver.findElement(By.id("br.com.icarros.androidapp:id/applyButton")).click();
                     break;
                 }
@@ -357,25 +379,12 @@ public class MyTest {
 
             System.out.println("---CARRO1---");
             System.out.println(marca1W);
-            Assert.assertEquals(marca1W, marca1R); // Compara marca do Carro1 ( Valor no Arquivo com a Valor no App)
-
             System.out.println(modelo1W);
-            Assert.assertEquals(modelo1W, modelo1R); // Compara modelo do Carro1 ( Valor no Arquivo com a Valor no App)
-
             System.out.println(ano1W);
-            Assert.assertEquals(ano1W, ano1R); // Compara ano do Carro1 ( Valor no Arquivo com a Valor no App)
-
             System.out.println(km1W);
-            Assert.assertEquals(km1W, km1R);// Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
-
             System.out.println(cor1W);
-            Assert.assertEquals(cor1W, cor1R);// Compara cor do Carro1 ( Valor no Arquivo com a Valor no App)
-
             System.out.println(cambio1W);
-            Assert.assertEquals(cambio1W, cambio1R);// Compara cambio do Carro1 ( Valor no Arquivo com a Valor no App)
-
             System.out.println(preco1W);
-            Assert.assertEquals(preco1W, preco1R);// Compara preço do Carro1 ( Valor no Arquivo com a Valor no App)
             System.out.println("-------------");
 
 
@@ -413,13 +422,9 @@ public class MyTest {
 
             System.out.println("----CARRO2----");
             System.out.println(marca2W);
-            Assert.assertEquals(marca2W, marca2R);// Compara marca do Carro2 ( Valor no Arquivo com a Valor no App)
             System.out.println(modelo2W);
-            Assert.assertEquals(modelo2W, modelo2R);// Compara modelo do Carro2 ( Valor no Arquivo com a Valor no App)
             System.out.println(ano2W);
-            Assert.assertEquals(ano2W, ano2R);// Compara ano do Carro2 ( Valor no Arquivo com a Valor no App)
             System.out.println(km2W);
-            Assert.assertEquals(km2W, km2R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
             System.out.println(cor2W);
             System.out.println(cambio2W);
             System.out.println(preco2W);
@@ -518,6 +523,39 @@ public class MyTest {
         JSONObject carro4 = carroJSON(marca4W, modelo4W, ano4W, km4W, cor4W, cambio4W, preco4W);
 
         writeCarros(carro1, carro2, carro3, carro4, "carros.json");
+
+            Assert.assertEquals(marca1W, marca1R); // Compara marca do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(modelo1W, modelo1R); // Compara modelo do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(ano1W, ano1R); // Compara ano do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(km1W, km1R);// Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cor1W, cor1R);// Compara cor do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cambio1W, cambio1R);// Compara cambio do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(preco1W, preco1R);// Compara preço do Carro1 ( Valor no Arquivo com a Valor no App)
+
+            Assert.assertEquals(marca2W, marca2R);// Compara marca do Carro2 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(modelo2W, modelo2R);// Compara modelo do Carro2 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(ano2W, ano2R);// Compara ano do Carro2 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(km2W, km2R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cor2W, cor2R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cambio2W, cambio2R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(preco2W, preco2R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+
+
+            Assert.assertEquals(marca3W, marca3R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(modelo3W, modelo3R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(ano3W, ano3R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(km3W, km3R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cor3W, cor3R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cambio3W, cambio3R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(preco3W, preco3W); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+
+            Assert.assertEquals(marca4W, marca4R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(modelo4W, modelo4R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(ano4W, ano4R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(km4W, km4R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cor4W, cor4R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(cambio4W, cambio4R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
+            Assert.assertEquals(preco4W, preco4R); // Compara kilometragem do Carro1 ( Valor no Arquivo com a Valor no App)
 
 
         }
