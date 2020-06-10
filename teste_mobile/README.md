@@ -3,7 +3,7 @@ Esta pasta contém os arquivos do Teste Mobile.
 
 
 PROJETO: Exercícios Práticos - ITEM 3
-CUROS: Início Rápido em Teste de Software
+CURSOS: Início Rápido em Teste de Software
 APLICATIVO ALVO: icarros - Versão 4.19.3
 
                                -ESPECIFICAÇÕES DO AMBIENTE DE TESTE-
