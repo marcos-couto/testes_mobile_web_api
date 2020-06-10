@@ -28,7 +28,7 @@ O script `Mytest.java` é responsável por fazer a consulta de 4 carros com os s
 - Ano mínimo: 2016
 - Ano máximo: 2017
 - Preço mínimo: R$ 54 mil
-- Preço máximo: R$ 55 mil  
+- Preço máximo: R$ 54 mil  
 
 Ao fazer a consulta, os dados (marca, modelo, ano, km, cor, câmbio e preço) são coletados e gravados no arquivo `carros.json` e depois compara os dados presentes no site com os dados no arquivo.
 Obs.: É necessário ter o arquivo `carros.json` na estrutura do projeto.
