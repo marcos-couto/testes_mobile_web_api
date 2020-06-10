@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-10T15:55:56" hostname="fusca" time="91.584">
+  <properties/>
+  <testcase name="test" classname="MyTest" time="91.584"/>
+  <system-out><![CDATA[++++ DADOS DO ARQUIVO++++
+
+----CARRO1----
+Jeep Renegade
+1.8 (Aut) (Flex)
+18/18
+42.200
+Branco
+Automático
+R$ 54.000
+---------------
+
+----CARRO2----
+Jeep Renegade
+Sport 1.8 (Flex)
+16/16
+20.366
+Prata
+Manual
+R$ 54.000
+---------------
+
+----CARRO3----
+Jeep Renegade
+1.8 (Aut) (Flex)
+15/16
+55.800
+Verde
+Automático
+R$ 54.000
+---------------
+
+----CARRO4----
+Jeep Renegade
+Sport 1.8 (Aut) (Flex)
+15/16
+69.000
+Branco
+Automático
+R$ 54.000
+---------------
+
++++++++++++++++++++++++++
+
+---CARRO1---
+Jeep Renegade
+1.8 (Aut) (Flex)
+18/18
+42.200
+Branco
+Automático
+R$ 54.000
+-------------
+----CARRO2----
+Jeep Renegade
+Sport 1.8 (Flex)
+16/16
+20.366
+Prata
+Manual
+R$ 54.000
+-------------
+----CARRO3----
+Jeep Renegade
+1.8 (Aut) (Flex)
+15/16
+55.800
+Verde
+Automático
+R$ 54.000
+-------------
+----CARRO4----
+Jeep Renegade
+Sport 1.8 (Aut) (Flex)
+15/16
+69.000
+Branco
+Automático
+R$ 54.000
+-------------
+]]></system-out>
+  <system-err><![CDATA[jun 10, 2020 12:56:25 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+</testsuite>
