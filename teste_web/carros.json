@@ -1,0 +1,38 @@
+{
+    "carro1": {
+        "Marca": "Jeep",
+        "Modelo": "Renegade Longitude 1.8 (Aut) (Flex) 2017",
+        "Ano": "2016 / 2017",
+        "Cor": "Preto",
+        "Km": "63.096",
+        "Câmbio": "automático",
+        "Preço": "R$ 62.900,00"
+    },
+    "carro2": {
+        "Marca": "Geep",
+        "Modelo": "Renegade Longitude 1.8 (Aut) (Flex) 2017",
+        "Ano": "2017 / 2017",
+        "Cor": "Vermelho",
+        "Km": "32.030",
+        "Câmbio": "automático",
+        "Preço": "R$ 69.990,00"
+    },
+    "carro3": {
+        "Marca": "Jeep",
+        "Modelo": "Renegade Sport 1.8 (Aut) (Flex) 2016",
+        "Ano": "2015 / 2016",
+        "Cor": "Prata",
+        "Km": "80.000",
+        "Câmbio": "automático",
+        "Preço": "R$ 62.900,00"
+    },
+    "carro4": {
+        "Marca": "Jeep",
+        "Modelo": "Renegade Longitude 1.8 (Aut) (Flex) 2016",
+        "Ano": "2016 / 2016",
+        "Cor": "Branco",
+        "Km": "37.000",
+        "Câmbio": "automático",
+        "Preço": "R$ 64.900,00"
+    }
+}
